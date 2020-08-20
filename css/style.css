@@ -1,0 +1,91 @@
+.page2 {
+  background: url(../img/bg1.jpeg);
+  background-size: cover;
+}
+.blur {
+  height: 100vh;
+  background-color: rgba(80, 180, 172, 0.623);
+  position: relative;
+}
+form {
+    box-shadow: 0px 0px 20px rgb(5, 54, 66);
+  justify-content: flex-end;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  height: 350px;
+  width: 500px;
+  padding: 30px;
+  background-color: rgba(19, 122, 126, 0.767);
+  transform: translate(-50%, -50%);
+}
+.input {
+  border: 2px solid white;
+    position: relative;
+  border-radius: 5px;
+  background-color: white;
+  width: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+  margin: 5px auto;
+}
+.input svg {
+  color: rgba(19, 122, 126, 0.767);
+  border-right: 1px solid rgba(19, 122, 126, 0.767);
+  padding: 5px;
+  height: 100%;
+  padding-right: 10px;
+  box-sizing: content-box;
+  margin-right: 10px;
+}
+label {
+  display: none;
+}
+input {
+    box-sizing: border-box;
+  width: 80%;  
+  outline: none;
+  border: none;
+  background: none;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -o-appearance: none;
+  -ms-appearance: none;
+}
+.header {
+  font-weight: 300;
+  line-height: 1.5em;
+}
+.login {
+  position: relative;
+  left: 50%;
+  top: 10px;
+  transform: translateX(-50%);
+}
+.login:hover {
+  background-color: var(--white);
+  color: var(--info);
+}
+#checksvg{
+    color: green;
+}
+#questionsvg{
+    color: rgba(148, 20, 20, 0.856);
+}
+#checksvg, #questionsvg{
+    position: absolute;
+    transition: opacity, 0.5s;
+    opacity: 0;
+    border: none;
+    cursor: pointer;
+    right: -10px;
+}
+.inputerror{
+    border: 2px solid rgba(148, 20, 20, 0.856);
+}

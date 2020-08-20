@@ -1,0 +1,69 @@
+:root{
+    --primarycolor: rgb(92, 221, 60);
+    --secondarycolor: rgb(104, 56, 12);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 17px;
+}
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    background-color: var(--secondarycolor);
+}
+#red{
+    color: var(--primarycolor);
+}
+.navbar-brand{
+    color: white;
+    font-size: 25px!important;
+}
+ul.navbar-nav li{
+    margin-left: 20px;
+}
+ul.navbar-nav li a{
+    color: rgb(224, 219, 219) !important;
+    font-size: 110%;
+    letter-spacing: 0.03em;
+}
+ul.navbar-nav li.active a{
+    color: var(--primarycolor)!important;
+    font-weight: 500;
+}
+.section{
+    padding-top: 60px;
+}
+#section0{
+    background-image: url('../img/adorable-blur-breed-close-up-406014.jpg');
+    background-size: cover;
+}
+.intro{
+    background: radial-gradient(circle, var(--primarycolor), var(--secondarycolor));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 75%;
+    padding: 5px;
+    font-weight: 600;
+    font-family: 'Broadway', fantasy;
+    text-align: center;
+    margin: auto;
+    font-size: 80px;
+    padding-top: 50px;
+}
+@media screen and (max-width: 992px){
+    .intro{
+        font-size: 30px;
+    }
+}
+/* .overlay-gradient{ */
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 0, 0, 0.295), rgba(2, 2, 2, 0.411));
+    position: absolute;
+    z-index: 5;
+}

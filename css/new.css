@@ -1,0 +1,139 @@
+/* @keyframes fadeintoviewfromleft {
+  from {
+    transform: translateX(-20%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+} */
+@keyframes opacitychange{
+  from{
+    opacity: 0.5;
+  }
+  to{
+    opacity: 1;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+nav.navbar{
+  padding-right: 55px;
+  padding-left: 55px;
+  background-color: black;
+}
+a.navbar-brand {
+  /* font-family: "Bullpen 3D", sans-serif; */
+  display: flex;
+  align-items: center;
+}
+a.navbar-brand svg {
+  font-size: 25px;
+  margin-right: 6px;
+}
+header {
+  height: 55px;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  background-color: black;
+  box-shadow: 0 5px 5px rgb(65, 34, 34);
+}
+.navbar-nav li a {
+  margin-left: 20px;
+}
+.navbar-nav li.nav-item a:first-child {
+  margin: none;
+}
+a.nav-link.active{
+  border-bottom: 2px solid rgb(199, 20, 8);
+  transition: border 1s;
+}
+.container-fluid .row {
+  padding: 0 20px;
+}
+.main {
+  opacity: 0.2;
+  animation: opacitychange 1s 0.2s forwards;
+  padding: 20px;
+  box-sizing: border-box;
+  height: 100vh;
+  background-image: url(../img/close-up-of-fish-over-black-background-325044.jpg);
+  background-size: cover;
+  background-position: 150px -40px;
+}
+#bg {
+  height: inherit;
+}
+#bg .row {
+  height: inherit;
+  align-items: center;
+}
+#bg .row .banner-text {
+  animation: fadeintoviewfromleft 1.5s 0.7s forwards;
+  border-left: 3px solid rgb(199, 20, 8);
+  padding: 10px 0 5px 30px;
+  color: rgb(224, 218, 218);
+  position: relative;
+  top: -30px;
+  font-size: 35px;
+  font-family: "Montserrat";
+}
+#id {
+  font-size: 20px;
+}
+.button{
+  background-color: rgb(199, 20, 8);
+  border-radius: 0;
+  padding: 10px 30px;
+  border: 2px solid rgb(199, 20, 8);
+  transition: all 0.5s ease-in-out;
+}
+.button:hover, .button:active, .button:focus{
+  background-color: transparent;
+  color: rgb(224, 218, 218);
+}
+.noleftmargin{
+  margin-left: 0!important;
+}
+.norightmargin{
+  margin-right: 0!important;
+}
+.underline{
+  width: 80px;
+  height: 4px;
+  background: rgb(199, 20, 8);
+  margin: auto;
+}
+.section{
+  padding-top: 55px;
+}
+/* Section 2 Styles */
+.whatwedo{
+  padding-left: 55px;
+  padding-right: 55px;  
+}
+.whatwedo h4{
+  color: rgb(199, 20, 8)
+}
+.whatwedo p{
+  font-weight: 500;
+}
+.content.card{
+  border: 1px solid black;
+  transition: all 0.2s ease-in;
+  height: 100%;
+}
+.content.card:hover{
+  box-shadow: 0 0 15px black;
+  transform: scale(1.01);
+}
+.content.card:hover .content.card{
+  transform: rotate(10deg);
+}
+/* End of Section Two styles */

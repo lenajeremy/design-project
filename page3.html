@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My 30DDP - Design 3</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/icons.css">
+	<link rel="stylesheet" href="css/style3.css">
+</head>
+
+<body>
+	<header>
+		<h3>Student Register Checker</h3>
+	</header>
+	<div class="main" id = main>
+		<input type="color" name="color" id="color">
+		<div class="introsection active" id=whattodo>
+			<h5>What brings you here?</h5>
+			<input type="radio" class=reason name="reason" id="reason1" value='register child'>
+			<label for="#reason1">I want to register my child</label><br>
+			<input type="radio" name="reason" class=reason id="reason2" value='check on child'>
+			<label for="reason2">I want to check up on my child</label><br>
+			<button class='btn btn-next btn-sm btn-success'>NEXT</button>
+		</div>
+		<div class="introsection inactive" id=registerchild>
+			<h5>What is the name of your child?</h5>
+			<input type="text" placeholder="What is the name of your child" id=childname><br><br>
+			<button class='btn btn-sm btn-primary btn-prev'>PREV</button>
+			<button class='btn btn-next btn-sm btn-success' id = finalbtn>NEXT</button>
+		</div>
+		<div class="introsection inactive" id = result>
+			<h5>About Your Child</h5>
+			<button class="btn btn-sm btn-prev btn-primary" id = finalprev>PREV</button>
+		</div>
+
+	</div>
+	<script src="js/all.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/main3.js"></script>
+</body>
+
+</html>

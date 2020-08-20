@@ -1,0 +1,159 @@
+@keyframes animation {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+  }
+  100% {
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 50%);
+  }
+}
+@keyframes wrong {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+  }
+  40% {
+    opacity: 0.9;
+    transform: translate(-50%, -50%) rotate(-7deg);
+  }
+  65% {
+    opacity: 0.7;
+    transform: translate(-50%, -50%) rotate(5deg);
+  }
+  90% {
+    opacity: 0.9;
+    transform: translate(-50%, -50%) rotate(-2deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+  }
+}
+@keyframes fadeDown {
+  0% {
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+  }
+}
+.user,
+.email,
+.password,
+.endnote {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+  width: 350px;
+  box-shadow: 3px 3px 5px gray;
+}
+.endnote p {
+  padding: 0;
+  margin: 0;
+}
+.animation {
+  animation: animation 0.5s 0s forwards;
+}
+.wrong {
+  animation: wrong 0.5s 0s forwards;
+}
+.danger {
+  background: linear-gradient(to right, rgb(221, 135, 135), red);
+}
+.correct {
+  background: linear-gradient(to left, rgb(69, 116, 64), rgb(26, 209, 124));
+}
+body {
+  height: 1vh;
+  width: 1vw;
+}
+.inactive {
+  opacity: 0;
+  pointer-events: none;
+}
+.active {
+  opacity: 1;
+  pointer-events: all;
+}
+.user input,
+.email input,
+.password input {
+  width: 100%;
+  border: none;
+  padding: 5px 5px 5px 15px;
+  font-size: 16px;
+  font-weight: 300;
+}
+.user input:focus,
+.user input:active,
+.email input:focus,
+.user input:active,
+.password input:focus,
+.password input:active {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -o-appearance: none;
+  outline: none;
+  border: none;
+  background: none;
+  appearance: none;
+}
+button {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -o-appearance: none;
+  outline: none;
+  border: none;
+  background: none;
+  appearance: none;
+}
+button:active,
+button:focus {
+  outline: none;
+}
+button:active svg,
+button:hover svg {
+  transition: 0.2s linear color;
+  color: rgb(8, 104, 21);
+}
+
+/* Form 2 */
+.page2{
+    background: url(../img/bg1.jpeg);
+}
+.blur{
+    width: 1000px;
+    height: 50px;
+    background-color: white;
+}

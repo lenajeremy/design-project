@@ -1,0 +1,156 @@
+@keyframes fadeIntoViewFromRight {
+  0% {
+    pointer-events: none;
+    opacity: 0;
+    transform: translate(120%, -50%);
+  }
+  100% {
+    pointer-events: all;
+    opacity: 1;
+    transform: translate(0%, -50%);
+  }
+}
+@keyframes fadeIntoViewFromLeft {
+  0% {
+    pointer-events: none;
+    opacity: 0;
+    transform: translate(-120%, -50%);
+  }
+  100% {
+    pointer-events: all;
+    opacity: 1;
+    transform: translate(0%, -50%);
+  }
+}
+@keyframes fadeOuttaViewFromRight {
+  0% {
+    pointer-events: all;
+    opacity: 1;
+    transform: translate(0%, -50%);
+  }
+  100% {
+    pointer-events: none;
+    opacity: 0;
+    transform: translate(-120%, -50%);
+  }
+}
+@keyframes fadeOuttaViewFromLeft {
+  0% {
+    pointer-events: all;
+    opacity: 1;
+    transform: translate(0%, -50%);
+  }
+  100% {
+    pointer-events: none;
+    opacity: 0;
+    transform: translate(120%, -50%);
+  }
+}
+
+body {
+  height: 100vh;
+  background: url(../img/school2.jpeg) bottom no-repeat;
+  background-size: cover;
+  width: 100vw;
+}
+#color{
+  cursor: pointer;
+}
+.main {
+  background: #a89d0633;
+  height: inherit;
+  width: 100%;
+  padding-top: 80px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.introsection {
+  overflow: auto;
+  width: 90%;
+  border: 2px solid rgb(19, 85, 19);
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgb(83, 76, 76);
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+}
+h3 {
+  text-align: center;
+}
+header {
+  position: fixed;
+  width: 100vw;
+  height: 60px;
+  background: rgb(15, 110, 15);
+  padding: 10px;
+  color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 5px 0 10px rgb(34, 32, 32);
+}
+header h3 {
+  font-size: 25px;
+  font-weight: 300;
+  margin-top: 3px;
+  text-align: center;
+}
+.searcharea {
+  background-color: aliceblue;
+  padding: 10px;
+}
+#operation,
+option {
+  border: none;
+  background-color: transparent;
+}
+#operation:focus,
+option:focus,
+#operation:active,
+option:active {
+  outline: none;
+}
+.introsection h5 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+#reason1,
+#reason2 {
+  float: left;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 5px;
+  margin-right: 10px;
+}
+.btn-next {
+  float: right;
+}
+.btn-prev {
+  float: left;
+}
+#childname {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  height: 50px;
+  outline: none;
+  line-height: 50px;
+  font-size: 18px;
+}
+#childname:focus {
+  border: 2px solid green;
+}
+.inactive {
+  opacity: 0;
+  pointer-events: none;
+}
+#color {
+  height: 30px;
+  width: 30px;
+}
+#finalprev{
+  float: none;
+  bottom: 0;
+}
